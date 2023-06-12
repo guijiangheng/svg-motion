@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1rem;
+}
+
+svg {
+  width: 100vmin;
+  height: 100vmin;
+}
+
+svg * {
+  vector-effect: non-scaling-stroke;
+}
+
+.circle {
+  fill: none;
+  stroke: #555;
+  stroke-width: 2;
+}
+
+.poly {
+  fill: none;
+  stroke: #e18728;
+  stroke-width: 4;
+}
+
+.vertices {
+  & line {
+    stroke: #838383;
+    stroke-width: 2;
+    stroke-dasharray: 8;
+  }
+
+  & circle {
+    fill: #ffd86e;
+    stroke: #be4c39;
+    stroke-width: 4;
+  }
+
+  & text {
+    fill: #9351a6;
+    font: 700 100px monospace;
+
+    @media (min-width: 300px) {
+      font-size: 80px;
+    }
+  }
+}
+
+.arc {
+  .radius {
+    stroke: #e18728;
+    stroke-width: 4;
+  }
+
+  .line {
+    fill: none;
+    stroke: #be4c39;
+    stroke-width: 4;
+  }
+
+  .fill {
+    fill: #ffd86e;
+  }
+
+  & text {
+    font: 700 100px monospace;
+  }
+}
+
+#line {
+  stroke: #ccc;
+  stroke-width: 2;
+}
